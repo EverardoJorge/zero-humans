@@ -1,3 +1,5 @@
+/* jshint node: true */
+'use strict';
 const config = require('../../settings/index');
 
 const webhook = (req, res) => {

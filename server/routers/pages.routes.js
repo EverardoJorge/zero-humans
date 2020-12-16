@@ -2,11 +2,11 @@
 'use strict';
 const express = require('express');
 const app = express();
-const fb = require('../controllers/fb.controller');
+const pages = require('../controllers/pages.controller')
 
 
-app.get('/webhook/', (req, res) => {
-    fb.webhook(req, res);
+app.get('/', (req, res) => {
+    pages.index(req, res);
 })
 
 module.exports = app;
